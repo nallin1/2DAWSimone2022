@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label { 
+            margin-left: 0;
+        }
+        .formulario {
+            text-align: center;
+            font-size: x-large;
+            font-family: monospace;
+        }
+        input {
+            height: 30px;
+            padding: 3px;
+            width: 20%;
+        }
+        #btnEnviar {
+            width: 140px;
+            background-color: lime;
+            border-radius: 6px;
+            height: 50px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <hr>
+    <div class="formulario">
+        <form>
+            <label for="Nome" id="labelNome">Nome:</label><br>
+            <input type="text" name="Nome" id="Nome" size="20"
+            maxlength="30" minlength="3" required placeholder="Digite seu nome" spellcheck>
+    
+            <br><br>
+            <label for="idade">Idade:</label><br>
+            <input type="number" name="idade" id="idade" size="3" min="18" max="50" step="2" placeholder="Idade">
+    
+            <br><br>
+            <label for="cargo">Cargo:</label><br>
+            <input type="text" name="cargo" id="cargo" value="Professor" readonly size="5">
+    
+            <br><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" placeholder="senha" required name="senha" id="senha" minlength="8" maxlength="10">
+    
+            <br><br>
+            <label for="genero">Gênero</label><br>
+            <div class="fem">F<input type="radio" name="genero" id="Feminino" checked></div>
+            <div class="masc">M<input type="radio" name="genero" id="Masculino"></div>
+            <div class="naobinario">NB<input type="radio" name="genero" id="Nao-Binario"></div>
+            
+            <br><br>
+            <label>Período de Aula</label>
+            <div class="manha">Manhã<input type="checkbox" name="manha" id="manha" value="M"></div>
+            <div class="tarde">Tarde <input type="checkbox" name="tarde" id="tarde" value="T"></div>
+            <div class="noite">Noite <input type="checkbox" name="noite" id="noite" value="N"></div>
+
+            <br><br>
+            Curso:<br>
+            <select name="curso" id="curso">
+                <option value="DS">Desenvolvimento de Sistemas</option>
+                <option value="Edificações">Edificações</option>
+                <option value="Enfermagem">Enfermagem</option>
+                <option value="Geodesia">Geodésia e Cartografia</option>
+                <option value="Mecânica">Mecânica</option>
+                <option value="Qualidade">Qualidade</option>
+            </select>
+            
+            <br><br>
+            <label>Disciplinas (várias):</label><br>
+            <select name="disciplinas" id="disciplinas" size="3" multiple>
+                <option value="BD">Banco de Dados</option>
+                <option value="LP" selected>Lógica da Programação</option>
+                <option value="DAW">Des. Ap. Web.</option>
+
+            </select>
+
+            <br><br>
+            <!--  -->
+            <input type="submit" name="btnEnviar" value="Enviar" id="btnEnviar">
+    
+        </form>
+    </div>
+</body>
+</html>
