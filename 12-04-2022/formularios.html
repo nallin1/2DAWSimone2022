@@ -26,6 +26,17 @@
             height: 50px;
             border: 1px black solid;
         }
+
+        label, input, select {
+            margin-top: 30px;
+        }
+        h2 {
+            border: 1px black solid;
+            padding: 10px;
+        }
+        fieldset {
+            border: dotted;
+        }
     </style>
 </head>
 <body>
@@ -33,54 +44,98 @@
     <hr>
     <div class="formulario">
         <form>
-            <label for="Nome" id="labelNome">Nome:</label><br>
-            <input type="text" name="Nome" id="Nome" size="20"
-            maxlength="30" minlength="3" required placeholder="Digite seu nome" spellcheck>
-    
-            <br><br>
-            <label for="idade">Idade:</label><br>
-            <input type="number" name="idade" id="idade" size="3" min="18" max="50" step="2" placeholder="Idade">
-    
-            <br><br>
-            <label for="cargo">Cargo:</label><br>
-            <input type="text" name="cargo" id="cargo" value="Professor" readonly size="5">
-    
-            <br><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" placeholder="senha" required name="senha" id="senha" minlength="8" maxlength="10">
-    
-            <br><br>
-            <label for="genero">Gênero</label><br>
-            <div class="fem">F<input type="radio" name="genero" id="Feminino" checked></div>
-            <div class="masc">M<input type="radio" name="genero" id="Masculino"></div>
-            <div class="naobinario">NB<input type="radio" name="genero" id="Nao-Binario"></div>
-            
-            <br><br>
-            <label>Período de Aula</label>
-            <div class="manha">Manhã<input type="checkbox" name="manha" id="manha" value="M"></div>
-            <div class="tarde">Tarde <input type="checkbox" name="tarde" id="tarde" value="T"></div>
-            <div class="noite">Noite <input type="checkbox" name="noite" id="noite" value="N"></div>
+            <fieldset>
+                <legend><h2>Dados Pessoais</h2></legend>
+                <label for="Nome" id="labelNome">Nome:</label><br>
+                <input type="text" name="Nome" id="Nome" size="20"
+                maxlength="30" minlength="3" required placeholder="Digite seu nome" spellcheck>
 
-            <br><br>
-            Curso:<br>
-            <select name="curso" id="curso">
-                <option value="DS">Desenvolvimento de Sistemas</option>
-                <option value="Edificações">Edificações</option>
-                <option value="Enfermagem">Enfermagem</option>
-                <option value="Geodesia">Geodésia e Cartografia</option>
-                <option value="Mecânica">Mecânica</option>
-                <option value="Qualidade">Qualidade</option>
-            </select>
-            
-            <br><br>
-            <label>Disciplinas (várias):</label><br>
-            <select name="disciplinas" id="disciplinas" size="3" multiple>
-                <option value="BD">Banco de Dados</option>
-                <option value="LP" selected>Lógica da Programação</option>
-                <option value="DAW">Des. Ap. Web.</option>
+                <br><br>
+                <label for="dataNasc">Data de Nascimento:</label><br>
+                <input type="date" id="dataNasc" name="dataNasc">
 
-            </select>
+                <br><br>
+                <label for="idade">Idade:</label><br>
+                <input type="number" name="idade" id="idade" size="3" min="18" max="50" step="2" placeholder="Idade">
+        
+                <br><br>
+                <label for="cargo">Cargo:</label><br>
+                <input type="text" name="cargo" id="cargo" value="Professor" readonly size="5">
+                
+                <br><br>
+                <label for="foto">Foto 3X4</label><br>
+                <input type="file" name="foto" id="foto" accept=".png, .jpeg, .jpg"> 
 
+                <br><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" placeholder="senha" required name="senha" id="senha" minlength="8" maxlength="10">
+        
+                <br><br>
+                <label for="">Horário de Trabalho</label><br>
+                De<input type="time" name="inicioTrab" id="inicioTrab"> a <input type="time" name="fimTrab" id="fimTrab">
+
+
+                <br><br>
+                <label for="genero">Gênero</label><br>
+                <div class="fem">F<input type="radio" name="genero" id="Feminino" checked></div>
+                <div class="masc">M<input type="radio" name="genero" id="Masculino"></div>
+                <div class="naobinario">NB<input type="radio" name="genero" id="Nao-Binario"></div>
+
+                <br><br>
+                <label for="corPreferida">Cor Preferida</label>
+                <input type="color" name="corPreferida" id="corPreferida" value="#1a1a1a">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend><h2>Dados Profissionais</h2></legend>
+                <br><br>
+                <label for="dataHoraCad ">Data e hora do cadastro:</label><br>
+                <input type="datetime-local" id="dataHoraCad" name="dataHoraCad" required value="2018-06-12T19:30">
+
+                <br><br>
+                <label for="emailProf">Email Profissional</label><br>
+                <input type="email" name="emailProf" id="emailProf" minlength="5" required>
+
+                <br><br>
+                <label for="semanaInicio">Semana de Início</label><br>
+                <input type="week" name="semanaInicio" id="semanaInicio">
+
+                <br><br>
+                <label for="mesInicio">Mês de Início</label><br>
+                <input type="month" id="mesInicio" name="mesInicio">
+        
+
+                <br><br>
+                <label>Período de Aula</label>
+                <div class="manha">Manhã<input type="checkbox" name="manha" id="manha" value="M"></div>
+                <div class="tarde">Tarde <input type="checkbox" name="tarde" id="tarde" value="T"></div>
+                <div class="noite">Noite <input type="checkbox" name="noite" id="noite" value="N"></div>
+
+                <br><br>
+                Curso:<br>
+                <select name="curso" id="curso">
+                    <option value="DS">Desenvolvimento de Sistemas</option>
+                    <option value="Edificações">Edificações</option>
+                    <option value="Enfermagem">Enfermagem</option>
+                    <option value="Geodesia">Geodésia e Cartografia</option>
+                    <option value="Mecânica">Mecânica</option>
+                    <option value="Qualidade">Qualidade</option>
+                </select>
+                
+                <br><br>
+                <label>Disciplinas (várias):</label><br>
+                <select name="disciplinas" id="disciplinas" size="3" multiple>
+                    <option value="BD">Banco de Dados</option>
+                    <option value="LP" selected>Lógica da Programação</option>
+                    <option value="DAW">Des. Ap. Web.</option>
+
+                </select>
+
+                <br><br>
+                <label for="exp">Experiência <small>(de 0 a 10)</small></label><br>
+                <input type="range" name="exp" id="exp" min="0" max="10" value="0">
+
+            </fieldset>
             <br><br>
             <!--  -->
             <input type="submit" name="btnEnviar" value="Enviar" id="btnEnviar">
