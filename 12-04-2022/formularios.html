@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        label { 
+        label {
+
             margin-left: 0;
+            font-size: xx-large;
+            font-weight: bold;
+            font-style: italic;
         }
+
         .formulario {
             text-align: center;
             font-size: x-large;
             font-family: monospace;
         }
+
         input {
-            height: 30px;
+            /*height: 30px;
             padding: 3px;
-            width: 20%;
+            width: 20%;*/
         }
+
         #btnEnviar {
             width: 140px;
             background-color: lime;
@@ -27,28 +35,46 @@
             border: 1px black solid;
         }
 
-        label, input, select {
+        label,
+        input,
+        select {
             margin-top: 30px;
         }
+
         h2 {
             border: 1px black solid;
             padding: 10px;
         }
+
         fieldset {
             border: dotted;
         }
+
+        input[type="checkbox"i] {
+            width: 100px;
+        }
+
+        input[type="file" i] {
+
+        }
     </style>
 </head>
+
 <body>
     <h1>Formulário de Cadastro</h1>
     <hr>
     <div class="formulario">
-        <form>
+        <form action="cadastro.php" method="post"> 
+            Buscar: <br>
+            <input type="search" placeholder="termo de pesquisa"> <input type="button" value="Buscar">
+
             <fieldset>
-                <legend><h2>Dados Pessoais</h2></legend>
+                <legend>
+                    <h2>Dados Pessoais</h2>
+                </legend>
                 <label for="Nome" id="labelNome">Nome:</label><br>
-                <input type="text" name="Nome" id="Nome" size="20"
-                maxlength="30" minlength="3" required placeholder="Digite seu nome" spellcheck>
+                <input type="text" name="Nome" id="Nome" size="20" maxlength="30" minlength="3" required
+                    placeholder="Digite seu nome" spellcheck>
 
                 <br><br>
                 <label for="dataNasc">Data de Nascimento:</label><br>
@@ -57,22 +83,24 @@
                 <br><br>
                 <label for="idade">Idade:</label><br>
                 <input type="number" name="idade" id="idade" size="3" min="18" max="50" step="2" placeholder="Idade">
-        
+
                 <br><br>
                 <label for="cargo">Cargo:</label><br>
                 <input type="text" name="cargo" id="cargo" value="Professor" readonly size="5">
-                
+
                 <br><br>
                 <label for="foto">Foto 3X4</label><br>
-                <input type="file" name="foto" id="foto" accept=".png, .jpeg, .jpg"> 
+                <input type="file" name="foto" id="foto" accept=".png, .jpeg, .jpg">
 
                 <br><br>
                 <label for="senha">Senha:</label><br>
-                <input type="password" placeholder="senha" required name="senha" id="senha" minlength="8" maxlength="10">
-        
+                <input type="password" placeholder="senha" required name="senha" id="senha" minlength="8"
+                    maxlength="10">
+
                 <br><br>
                 <label for="">Horário de Trabalho</label><br>
-                De<input type="time" name="inicioTrab" id="inicioTrab"> a <input type="time" name="fimTrab" id="fimTrab">
+                De<input type="time" name="inicioTrab" id="inicioTrab"> a <input type="time" name="fimTrab"
+                    id="fimTrab">
 
 
                 <br><br>
@@ -87,7 +115,9 @@
             </fieldset>
             <br><br>
             <fieldset>
-                <legend><h2>Dados Profissionais</h2></legend>
+                <legend>
+                    <h2>Dados Profissionais</h2>
+                </legend>
                 <br><br>
                 <label for="dataHoraCad ">Data e hora do cadastro:</label><br>
                 <input type="datetime-local" id="dataHoraCad" name="dataHoraCad" required value="2018-06-12T19:30">
@@ -103,7 +133,7 @@
                 <br><br>
                 <label for="mesInicio">Mês de Início</label><br>
                 <input type="month" id="mesInicio" name="mesInicio">
-        
+
 
                 <br><br>
                 <label>Período de Aula</label>
@@ -121,26 +151,52 @@
                     <option value="Mecânica">Mecânica</option>
                     <option value="Qualidade">Qualidade</option>
                 </select>
-                
+
                 <br><br>
                 <label>Disciplinas (várias):</label><br>
                 <select name="disciplinas" id="disciplinas" size="3" multiple>
-                    <option value="BD">Banco de Dados</option>
-                    <option value="LP" selected>Lógica da Programação</option>
-                    <option value="DAW">Des. Ap. Web.</option>
-
+                    <optgroup label="Curso técnico">
+                        <option value="BD">Banco de Dados</option>
+                        <option value="LP" selected>Lógica da Programação</option>
+                        <option value="DAW">Des. Ap. Web.</option>
+                    </optgroup>
+                    <optgroup label="Ensino Médio">
+                        <option value="Diurno">Diurno</option>
+                        <option value="Noturno">Noturno</option>
+                    </optgroup>
                 </select>
 
                 <br><br>
                 <label for="exp">Experiência <small>(de 0 a 10)</small></label><br>
                 <input type="range" name="exp" id="exp" min="0" max="10" value="0">
 
+                <br><br>
+                Conhecimento:<br> 
+                <input name="conhecimento" id="conhecimento" list="lista-conhecimento">
+                <datalist id="lista-conhecimento">
+                    <option value="HTML5">HTML5</option>
+                    <option value="HTML4">HTML4</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="PHP">PHP</option>
+                </datalist>
+
+                <br><br>
+                Curriculo no Linkedin:<br>
+                <input type="url" id="curriculo" name="curriculo">
+                
+
+                <br><br>
+                Observação:<br>
+                <textarea rows="5" cols="40" spellcheck="false" maxlength="200"></textarea>
+
             </fieldset>
             <br><br>
             <!--  -->
             <input type="submit" name="btnEnviar" value="Enviar" id="btnEnviar">
-    
+            <input type="reset" value="Limpar">
+
         </form>
     </div>
 </body>
+
 </html>
