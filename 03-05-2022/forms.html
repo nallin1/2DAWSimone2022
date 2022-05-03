@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Leitor</title>
+</head>
+
+<body>
+
+    <h1>Cadastro do Leitor</h1>
+    <br><br>
+    <div class="formulario">
+        <form action="">
+            <fieldset>
+                <legend>Seus Dados:</legend>
+
+                <label for="Nome">Nome Completo: </label>
+                <input type="text" name="Nome" id="nome" required placeholder="Digite seu nome completo..." size="30">
+
+                <br><br>
+                <label for="dataNasc">Data de Nascimento:</label>
+                <input type="date" id="dataNasc" name="dataNasc" required>
+
+                <br><br>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" min="12" max="100" required placeholder="Idade">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Dados de Cadastro</legend>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Mínimo de 8 caractéres..." minlength="8"
+                    required>
+                <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Gostos Literários:</legend>
+
+                <label for="gostosLiterarios">Quais seus gêneros literários preferidos ?</label>
+                <br><br>
+                <input type="checkbox" name="Terror" id="terror" value="Terror">Terror
+                <br>
+                <input type="checkbox" name="Aventura" id="aventura">Aventura
+                <br>
+                <input type="checkbox" name="Suspense" id="suspense">Suspense
+                <br>
+                <input type="checkbox" name="Comédia" id="comedia">Comédia
+                <br>
+                <input type="checkbox" name="Romance" id="romance">Romance
+                <br>
+                <input type="checkbox" name="Divulgação Científica" id="divulgacaoCientifica">Divulgação Científica
+                <br><br>
+                <label for="outroGenero">Outro Gênero ?</label>
+                <input type="text" name="outroGenero" id="outroGenero" placeholder="Insira um gênero alternativo">
+
+                <br><br>
+                Qual é o seu genero favorito?
+                <select name="generoFav" id="generoFav">
+                    <option value=""></option>
+                    <option value="Terror">Terror</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Romance">Romance</option>
+                    <option value="DC">Divulgação Científica</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </fieldset>
+            <br><br>
+
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+
+</html>
