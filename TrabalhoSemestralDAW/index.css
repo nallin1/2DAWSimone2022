@@ -1,0 +1,27 @@
+.book-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+#autor, #title {
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: var(--white);
+}
+
+#title {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#autor {
+    margin-top: 5px;
+}
