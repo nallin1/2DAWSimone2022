@@ -36,3 +36,9 @@ form#cadastrar {
     color: white;
     font-size: larger;
 }
+
+#logoUser {
+    position: absolute;
+    left: 96%;
+    top: 1%;
+}
