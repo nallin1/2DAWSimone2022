@@ -1,0 +1,77 @@
+
+
+.book-container {
+    display: flex;
+    margin-top: 5vh;
+    width: 100%;
+    
+}
+
+#book-title, #book-autor, #editor, #buy-book {
+    font-family: 'Montserrat', serif;
+    color: var(--white);
+    margin: 1vh 0 1vh 0;
+}
+
+#book-autor, #editor {
+    font-weight: 500;
+}
+
+#book-image {
+    border: none;
+    transition: 0.7s;
+}
+
+#book-image:hover {
+    border: 1.5px white solid;
+}
+
+#buy-book {
+    background-color: black;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 130%;
+    border-radius: 7px;
+    margin-top: 3vh;
+    transition: 0.7s;
+    border: none;
+}
+
+#buy-book:hover {
+    color: black;
+    background-color: var(--white);
+}
+
+#indice, .summary, #indice{
+    list-style: decimal;
+    text-decoration: solid var(--white);
+    
+}
+
+.text-enredo, .text-autora, .text-personagens, .summary  {
+    width: 60%;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.indice-link, #indice, .indice-item {
+    color: white;
+    display: block;
+}
+
+span {
+    font-size: larger;
+}
+.book-description {
+    margin-left: 2vw;
+    width: 70%;
+}
+
+.text-title {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+ol {
+    margin-top: 2vh;
+}
