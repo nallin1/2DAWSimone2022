@@ -1,9 +1,8 @@
-
-
 .book-container {
     display: flex;
     margin-top: 5vh;
     width: 100%;
+    margin-bottom: 4vh;
     
 }
 
