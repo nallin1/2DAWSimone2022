@@ -3,7 +3,8 @@
     margin-top: 5vh;
     width: 100%;
     margin-bottom: 4vh;
-    
+    align-items: flex-start;
+    justify-content: right;
 }
 
 #book-title, #book-autor, #editor, #buy-book {
