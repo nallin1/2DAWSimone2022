@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 400px;
+            margin: 0;
+            position: absolute;
+        }
+        .box1 {
+            background-color: blue;
+            left: 10px;
+            top: 0;
+            z-index: 0;
+        }
+        .box2 {
+            background-color: yellow;
+            left: 30px;
+            top: 100px;
+            z-index: 1;
+        }
+        .box3 {
+            background-color: red;
+            left: 50px;
+            top: 200px;
+            z-index: 2;
+        }
+
+        #listaDeMateriais {
+            position: absolute;
+            z-index: 4;
+        }
+
+        img {
+            width: 10px;
+        }
+        
+        ul {
+            list-style-image: ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Z INDEX -->
+    <div class="box">
+        <div class="box box1">TEXT0 1 - OUTRO TEXTO</div>
+        <div class="box box2">TEXTO 2 - OUTRO TEXTO</div>
+        <div class="box box3">TEXTO 3 - OUTRO TEXTO</div>
+    </div>
+
+    <div id="listaDeMateriais">
+        <ul>
+            <li><img src="../../media/star.svg" alt="cad">Caderno</li>
+            <li><img src="../../media/star.svg" alt="lap">Lápis</li>
+            <li><img src="../../media/star.svg" alt="esq">Esquadro</li>
+            <li><img src="../../media/star.svg" alt="reg">Régua</li>
+        </ul>
+    </div>
+</body>
+</html>
