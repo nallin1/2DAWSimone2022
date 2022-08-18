@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Usuário</title>
+    <style>
+        body {
+            background: linear-gradient(rgb(146, 34, 0), rgb(197, 0, 33), rgb(59, 0, 59));
+            height: 120vh;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+            font-family: monospace;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            position: absolute;
+            left: 40%;
+
+
+        }
+
+        .box {
+            width: 70%;
+            border: 1px solid;
+            padding: 20px;
+            background: rgb(2, 0, 36);
+            background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 255, 1) 52%, rgba(0, 212, 255, 1) 100%);
+            color: rgb(220, 227, 255);
+            border-radius: 20px;
+        }
+
+        .box-campos {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            transition: 1s;
+            margin-left: 30%;
+            margin-top: 3vh;
+            color: black;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: greenyellow;
+        }
+
+        h1 {
+            margin-left: 30px;
+            color: rgb(163, 163, 163);
+        }
+
+        input {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            background-color: black;
+            border-radius: 20px;
+            color: whitesmoke;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=number],
+        input[type=url] {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <div class="box">
+            <form>
+                <div class="box-campos">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Digite um nome" required minlength="5">
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="email">E-Mail</label>
+                    <input id="email" type="email" required placeholder="nome@email.com">
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" minlength="6" required>
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label>Escolha suas frutas favoritas</label><br>
+                    <input id="laranja" type="checkbox" value="laranja"><label for="laranja">Laranja</label><br>
+                    <input id="maca" type="checkbox" value="maca"><label for="maca">Maçã</label><br>
+                    <input id="banana" type="checkbox" value="banana"><label for="banana">Banana</label>
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label>Sexo</label>
+                    <input name="sexo" id="f" type="radio" value="f"><label for="f">F</label>
+                    <input name="sexo" id="m" type="radio" value="m"><label for="m">M</label>
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="cor">Escolha uma cor</label>
+                    <input id="cor" type="color">
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="aniversario">Data de Aniversário</label>
+                    <input id="aniversario" type="date" required>
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="idade">Idade</label>
+                    <input id="idade" type="number" min="10">
+                    <br>
+                </div>
+
+
+
+                <div class="box-campos">
+                    <label for="nota">Nota</label>
+                    <input id="nota" type="range" min="0" max="10">
+                    <br>
+                </div>
+
+                <div class="box-campos">
+                    <label for="pagina">Página</label>
+                    <input id="pagina" type="url" placeholder="https://suapagina.com">
+                    <br>
+                </div>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
