@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <style>
+        #insta, #twitter, #youtube {
+            width: 10%;
+            margin-left: 2vw;
+            opacity: 0.1;
+        }
+
+        #insta:hover {
+            transition-delay: 3s;
+
+        }
+
+        #insta:hover {
+            transform: scale(2, 2);
+            opacity: 1;
+        }
+
+        
+        #youtube {
+            transition:  1s;
+        }
+
+        #youtube:hover {
+            transform: rotate(10deg);
+            opacity: 1;
+        }
+
+        #twitter {
+            transition: all 3s;
+            opacity: 1;
+        }
+        #twitter:hover {
+            transform: rotate(2000000deg);
+            opacity: 1;
+        }
+    </style>
+</head>
+    <body>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram_icon" id="insta">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/640px-YouTube_icon_%282013-2017%29.png" alt="youtube" id="youtube">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="twitter" id="twitter">
+    </body>
+</html>
