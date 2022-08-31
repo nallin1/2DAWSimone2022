@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+        #d1 {
+            animation: an1 3s;
+            background-color: black;
+            z-index: -1;
+        }
+        #d2 {
+            animation: an1 2.5s;
+            background-color: aqua;
+            z-index: -2;
+        }
+        #d3 {
+            animation: an1 2s;
+            background-color: red;
+            z-index: -3;
+
+        }
+        #d4 {
+            animation: an1 1.5s;
+            background-color: blueviolet;
+            z-index: -4;
+        }
+        #d5 {
+            animation: an1 1s;
+            background-color: blue;
+            z-index: -5;
+        }
+        @keyframes an1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+</body>
+</html>
