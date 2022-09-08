@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/book-open.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../default.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Liber - Cadastro</title>
+</head>
+<body>
+    <nav id="topNavBar">
+        <ul>
+            <div class="right-itens">
+                <li><a href="../index.html"><img src="../images/iconmonstr-book-16 1.svg" alt="home" id="homeIcon" style="margin-left: 10px;"></a></li>
+                <li>|</li>
+                <li><a href="../categoria/categoria.html" id="categorias" style="margin-bottom: auto; margin-top: auto;">Categorias</a></li>
+                <li id="userIcon"><a href="../cadastro/cadastro.html"><img src="../images/user.svg" alt="user" id="logoUser"></a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="formulario">
+        <form action="input.php" id="cadastrar">
+            <h1 id="titulo">Criar Conta</h1><br>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="inputDados" required><br><br>
+            <label for="dataNasc">Data de Nascimento:</label><br>
+            <input type="date" name="dataNasc" id="inputDados"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="inputDados" required><br><br>
+            <label for="senha">Senha:</label><br>
+            <input type="password" name="senha" id="inputDados" required><br><br>
+            <h2>Gostos Literários</h2><br>
+            <input type="checkbox" name="terror" id="terror"><label for="terror">  Terror</label><br>
+            <input type="checkbox" name="aventura" id="aventura"><label for="aventura">  Aventura</label><br>
+            <input type="checkbox" name="ficcao" id="ficcao"><label for="ficcao">  Ficção Científica</label><br>
+            <input type="checkbox" name="outro" id="outro"><label for="outro">  Outro</label><br><br>
+            <button>Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

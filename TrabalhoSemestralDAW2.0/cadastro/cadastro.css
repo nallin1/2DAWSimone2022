@@ -1,0 +1,44 @@
+.formulario {
+    width: 20%;
+    margin: auto;
+    margin-top: 2vh;
+    font-family: 'Montserrat';
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    margin-left: 3vw;
+    
+}
+
+#inputDados {
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: unset;
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+form#cadastrar {
+    display: block;
+    padding: 20px 3vw 20px 3vw;
+    background-color: rgba(214, 214, 177, 0.47);
+    border: 2px solid var(--white);
+    box-shadow: 0px 101px 111px rgba(0, 0, 0, 0.07), 0px 46.6954px 51.3187px rgba(0, 0, 0, 0.0519173), 0px 26.718px 29.3634px rgba(0, 0, 0, 0.0438747), 0px 16.2176px 17.8234px rgba(0, 0, 0, 0.0377964), 0px 9.77185px 10.7394px rgba(0, 0, 0, 0.0322036), 0px 5.4416px 5.98037px rgba(0, 0, 0, 0.0261253), 0px 2.34039px 2.57211px rgba(0, 0, 0, 0.0180827);
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+}
+
+#logoUser {
+    position: absolute;
+    left: 96%;
+    top: 1%;
+}

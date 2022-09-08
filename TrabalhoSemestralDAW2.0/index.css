@@ -1,0 +1,47 @@
+.book-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    transition: 1s;
+}
+
+
+
+#autor, #title {
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: var(--white);
+}
+
+#title {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: x-large;
+    transition: 0.7s;
+}
+
+#title:hover {
+    color: white;
+}
+
+#autor {
+    margin-top: 5px;
+}
+
+.bookImg {
+    transition: all 0.7s;
+}
+
+.bookImg:hover {
+    border: 1.5px var(--white) solid;
+}
+
+/* responsividade */
+
