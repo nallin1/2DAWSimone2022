@@ -1,17 +1,27 @@
-.book-row {
+.container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
 }
 
-.book-item {
+.bookContainer{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bookItem {
     display: flex;
     flex-direction: column;
-    margin-left: 2vw;
-    transition: 1s;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    margin: 2em 1em 1em 1em;
 }
-
 
 
 #autor, #title {
@@ -24,7 +34,7 @@
     margin-top: 8px;
     font-weight: bold;
     font-size: x-large;
-    transition: 0.7s;
+    
 }
 
 #title:hover {
@@ -36,7 +46,6 @@
 }
 
 .bookImg {
-    transition: all 0.7s;
 }
 
 .bookImg:hover {
@@ -45,3 +54,17 @@
 
 /* responsividade */
 
+@media (max-width:600px) {
+    .bookContainer {
+        flex-direction: column;
+    }
+
+    .bookItem {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+}
