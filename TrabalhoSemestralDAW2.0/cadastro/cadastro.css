@@ -1,7 +1,7 @@
 .formulario {
     width: 20%;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 5vh;
     font-family: 'Montserrat';
 }
 
@@ -12,8 +12,14 @@ button {
     border: none;
     border-radius: 10px;
     font-size: larger;
-    margin-left: 3vw;
-    
+    font-family: 'Montserrat';
+    font-weight: 800;
+    transition: all 0.8s;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: black;
 }
 
 #inputDados {
@@ -24,6 +30,13 @@ button {
     width: 100%;
     margin-top: 5px;
 }
+
+#button-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 
 
 form#cadastrar {
@@ -40,5 +53,14 @@ form#cadastrar {
 #logoUser {
     position: absolute;
     left: 96%;
-    top: 1%;
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        width: 80%;
+    }
+
+    #logoUser {
+        left: 90%;
+    }
 }
