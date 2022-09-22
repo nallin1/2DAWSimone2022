@@ -1,7 +1,3 @@
-#topNavBar {
-    position: absolute;
-}
-
 .container {
     width: 100%;
     display: flex;
@@ -35,7 +31,7 @@
 }
 
 #title {
-    margin-top: 8px;
+    margin-top: 1vh;
     font-weight: bold;
     font-size: x-large;
     
@@ -46,10 +42,11 @@
 }
 
 #autor {
-    margin-top: 5px;
+    margin-top: 1em;
 }
 
 .bookImg {
+    transition: ease-in-out 1s;
 }
 
 .bookImg:hover {
@@ -61,14 +58,20 @@
 @media (max-width:600px) {
     .bookContainer {
         flex-direction: column;
+        
     }
-
     .bookItem {
         margin-top: 1em;
-        font-size: 2em;
+        font-size: 1em;
     }
 
     body {
         min-height: 100vh;
+    }
+}
+
+@media print {
+    .bookItem {
+        margin-top: 5vh;
     }
 }
