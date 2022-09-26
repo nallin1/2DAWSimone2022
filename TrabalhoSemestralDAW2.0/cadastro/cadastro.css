@@ -64,9 +64,16 @@ form#cadastrar {
 @media (max-width: 600px) {
     .formulario {
         width: 80%;
+        margin-top: 100px;
     }
 
     #logoUser {
         left: 90%;
     }
+
+@media (max-width: 440px) {
+     #categorias {
+        display: none;
+    }
+}
 }

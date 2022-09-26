@@ -5,6 +5,8 @@
     margin-bottom: 4vh;
     align-items: flex-start;
     justify-content: right;
+    margin-top: 100px;
+
 }
 
 #book-title, #book-autor, #editor, #buy-book {
@@ -20,7 +22,6 @@
 #book-image {
     border: none;
     transition: 0.7s;
-
 }
 
 #book-image:hover {
@@ -75,4 +76,15 @@ span {
 
 ol {
     margin-top: 2vh;
+}
+
+@media (max-width: 440px) {
+    #categorias {
+        display: none;
+    }   
+
+    .bookContainer {
+        flex-direction: column;
+        
+    }   
 }
