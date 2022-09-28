@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 :root {
@@ -85,3 +86,12 @@ a {
         background-color: var(--white);
     }
 }
+
+/*@media (max-width: 440px) {
+* { display: flex;
+    width: 98%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+}*/
