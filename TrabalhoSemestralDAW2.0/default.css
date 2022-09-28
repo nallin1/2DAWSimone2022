@@ -86,12 +86,3 @@ a {
         background-color: var(--white);
     }
 }
-
-/*@media (max-width: 440px) {
-* { display: flex;
-    width: 98%;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
- }
-}*/

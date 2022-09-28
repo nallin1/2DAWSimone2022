@@ -81,17 +81,10 @@ ol {
 @media (max-width: 440px) {
     #categorias {
         display: none;
-    }   
-
-    .book-container {
-        margin-right: 10%;
-        
-    }   
-    #book-image, #book-title, #book-autor, #editor, #buy-book {
-        left: 50px;
-    }
+    }  
 
     .book-description{
         margin-top: 40px;
     }
+  
 }
