@@ -9,7 +9,7 @@
     width: 80%;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 1em;
 }
 
 .bookItem {
@@ -18,9 +18,6 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
     margin: 2em 1em 1em 1em;
 }
 
@@ -59,7 +56,7 @@
 @media (max-width:600px) {
     .bookContainer {
         flex-direction: column;
-        
+        margin-top: 4em;
     }
     .bookItem {
         margin-top: 1em;
