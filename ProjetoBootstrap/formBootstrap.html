@@ -6,11 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     
 </head>
-<body>
-    
+<body style=" background: rgb(125,162,224); background: linear-gradient(106deg, rgba(125,162,224,1) 0%, rgba(171,202,222,1) 23%, rgba(167,199,222,1) 31%, rgba(171,202,222,1) 39%, rgba(214,214,214,1) 52%, rgba(171,202,222,1) 72%, rgba(156,189,215,1) 80%, rgba(125,162,224,1) 100%)">
+    <!--Form Login-->
+
+    <div class="container" style="background-color: aliceblue;">
+        <h1 class="display-5">Fazer Login</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+            <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+            <label for="inputAddress2" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+            <label for="inputCity" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+            </div>
+            <div class="col-md-2">
+            <label for="inputZip" class="form-label">DDD</label>
+            <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                Check me out
+                </label>
+            </div>
+            </div>
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
