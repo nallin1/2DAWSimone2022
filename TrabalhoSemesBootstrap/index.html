@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>  
 
-    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="default.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
@@ -21,14 +21,19 @@
     <link rel="stylesheet" href="./root.css">
     
 </head>
-<body>
-    <!--Começo navbar-->
-    <nav class="navbar bg-dark">
+<body style=" background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,121,1) 49%, rgba(2,0,36,1) 100%); width: 100%;">
+
+  <!--NavBar-->
+      <nav class="navbar" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">KNY</a>
+          <a class="navbar-brand" href="#">MagazineLuiza</a>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
-  
+      </nav>
+
     <!--Carousel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -38,13 +43,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/informatica.png" class="d-block w-100" alt="...">
+            <img src="https://s.mlcdn.com.br/banner/campanhas/0811largedesksaldaodelivros.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/enfermagem.png" class="d-block w-100" alt="...">
+            <img src="https://s.mlcdn.com.br/banner/campanhas/0811largedesksaldaodelivros.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="images/informatica.png" class="d-block w-100" alt="...">
+            <img src="https://s.mlcdn.com.br/banner/campanhas/0811largedesksaldaodelivros.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
