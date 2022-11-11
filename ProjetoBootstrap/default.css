@@ -1,3 +1,6 @@
 .container{
     margin: 60px;
 }
+.form1{
+    $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
+}
