@@ -12,12 +12,12 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     
 </head>
-<body style=" background: rgb(125,162,224); background: linear-gradient(106deg, rgba(125,162,224,1) 0%, rgba(171,202,222,1) 23%, rgba(167,199,222,1) 31%, rgba(171,202,222,1) 39%, rgba(214,214,214,1) 52%, rgba(171,202,222,1) 72%, rgba(156,189,215,1) 80%, rgba(125,162,224,1) 100%)">
+<body style="background-color:rgba(167,199,222,1);">
 
    <!--NavBar-->
    <nav class="navbar" style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" >
+      <a class="navbar-brand" href="./index.html" >
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16" style="color: rgb(141, 146, 192);">
         <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z">
       </svg></a>
@@ -26,8 +26,8 @@
 
    
     <!--Form Login -->
-    <div class=" container w-100 p-3" style="background-color: #eee;">
-     <h1 class="display-5">Preencha Seu Cadastro</h1>
+    <div class=" container w-100 p-4" style="background-color: #eee;">
+     <h1 class="display-5"><b>Preencha Seu Cadastro</b></h1>
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">Nome</label>
@@ -50,7 +50,7 @@
                 Please provide a valid city.
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-auto">
               <label for="validationCustom04" class="form-label">Estado</label>
               <select class="form-select" id="validationCustom04" required>
                 <option selected disabled value=""> </option>
@@ -65,26 +65,30 @@
                 Please select a valid state.
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-auto">
               <label for="validationCustom05" class="form-label">DDD</label>
               <input type="text" class="form-control" id="validationCustom05" required>
               <div class="invalid-feedback">
                 Please provide a valid zip.
               </div>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
+            <form> <br>
+              <div class="col-md-auto">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
-            </div>
+              <div class="col-auto">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Cadastrar</button>
+              <button class="btn btn-success" type="submit">Cadastrar</button>
             </div>
           </form>
         </div>
