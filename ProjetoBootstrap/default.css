@@ -1,5 +1,9 @@
-.container{
-    margin: 60px;
+.container .pagination{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2vh;
+  
 }
 .map-container{
     overflow:hidden;
@@ -13,4 +17,4 @@
     height:100%;
     width:100%;
     position:absolute;
-  }
+}
