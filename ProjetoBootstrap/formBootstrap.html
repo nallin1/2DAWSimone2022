@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 
+  <link rel="shortcut icon" href="./images/sacola-de-compras-quadrada-com-alca.png" type="image/x-icon">
   <link rel="stylesheet" href="default.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
     integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -33,71 +34,67 @@
 
   <!--Form Login -->
   <div class=" container w-100 p-4" style="background-color: #eee;">
-    <h1 class="display-5"><b>Preencha Seu Cadastro</b></h1>
-    <form class="row g-3 needs-validation" novalidate>
+    <h1 class="display-5"><b>Faça Seu Login</b></h1>
+    <form class="row g-3">
       <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <label for="validationServer01" class="form-label">Nome</label>
+        <input type="text" class="form-control was-validated" id="validationServer01" value="" required>
         <div class="valid-feedback">
-          Looks good!
+          Preencha com seu primeiro nome!
         </div>
       </div>
       <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Sobrenome</label>
-        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <label for="validationServer02" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control was-validated" id="validationServer02" value="" required>
         <div class="valid-feedback">
-          Looks good!
+          Preencha com somente um sobrenome!
         </div>
       </div>
       <div class="col-md-6">
-        <label for="validationCustom03" class="form-label">Cidade</label>
-        <input type="text" class="form-control" id="validationCustom03" required>
-        <div class="invalid-feedback">
-          Please provide a valid city.
+        <label for="validationServer03" class="form-label">Cidade</label>
+        <input type="text" class="form-control was-validated" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Digite sua cidade!
         </div>
       </div>
-      <div class="col-auto">
-        <label for="validationCustom04" class="form-label">Estado</label>
-        <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value=""> </option>
+      <div class="col-md-3">
+        <label for="validationServer04" class="form-label">Estado</label>
+        <select class="form-select was-validated" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+          <option selected disabled value=""></option>
           <option>SP</option>
           <option>RJ</option>
           <option>MG</option>
           <option>ES</option>
-          <option>BA</option>
-          <option>SC</option>
         </select>
-        <div class="invalid-feedback">
-          Please select a valid state.
+        <div id="validationServer04Feedback" class="invalid-feedback">
+          Selecione seu estado!
         </div>
       </div>
-      <div class="col-auto">
-        <label for="validationCustom05" class="form-label">DDD</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          Please provide a valid zip.
+      <div class="col-md-3">
+        <label for="validationServer05" class="form-label">CEP</label>
+        <input type="text" class="form-control was-validated" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+        <div id="validationServer05Feedback" class="invalid-feedback">
+          Digite seu CEP!
         </div>
       </div>
-      <form> <br>
-        <div class="col-md-auto">
-          <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text"></div>
-        </div>
-        <div class="col-auto">
-          <label for="exampleInputPassword1" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" required>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-      </form>
       <div class="col-12">
-        <button class="btn btn-success" type="submit">Cadastrar</button>
+        <div class="form-check">
+          <input class="form-check-input was-validated" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Li e aceito os termos de condições!!
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
       </div>
     </form>
+
+
+
   </div>
+
+
 
 
   <!--JS Bootstrap-->
